@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shristi| Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Shristi</h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a></li>
+        <li>Project <a href="p2.html">#2</a></li>
+        <li>Project <a href="p3.html">#3</a></li>
+        <li>Project <a href="p4.html">#4</a></li>
+        <li>Project <a href="p5.html">#5</a></li>
+        <li>Project <a href="p6.html">#6</a></li>
+        <li>Project <a href="p7.html">#7</a></li>
+        <li>Project <a href="p8.html">#8</a></li>
+        <li>Project <a href="p9.html">#9</a></li>
+      </ul>
+    </div>
+
+      <!-- main content -->
+    <div class="content">
+      <h1>
+        Consentful Interface
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        
+       <iframe
+        allow="camera"
+          width="600px"
+          height="400px"
+              
+        src="https://editor.p5js.org/shristinos/full/vyNSj7yxg"></iframe>
+        
+      
+    
+        <p>
+          For some reason, the embed doesn't load one of the buttons. 
+          If possible, please view the sketch in the <a href="https://editor.p5js.org/shristinos/sketches/vyNSj7yxg">editor</a> for 
+        the complete experience.</p>
+       
+
+    </div>
+   <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+      I used buttons to strike up a series of 3 scenes that lead the viewer to experience filters in addition to 
+      the ones introduced in experimental camera. However, instead of simply bombarding the user with the feed as soon as
+      the sketch loads, I now include a series of instructions about what's happening and what the sketch will be demanding
+        from the user i.e. consent to start their webcam. The intention of the sketch has been updated from being a self-referential
+        warning about present-day surveillance into becoming a repository of fun "filters" that are mapped to the
+        viewers face. 
+
+       
+        <br>
+      
+          
+    
+      <h1>
+        Process
+      </h1>
+<p> I sketched out a simple flowchart to map out how someone can be guided through each scene. </p>
+      <img src = "https://cdn.glitch.me/d4bc6f13-b09b-4f55-89bf-4831c101d69e%2Fimage.jpg?v=1638618130890"/>
+       <li>1. The switch statement was employed to load 3 scenes: a) To welcome the viewer into the sketch, b) to
+          inform them that their consent is needed to proceed, c) to give them the option to leave at any point.</li>
+          <li> 2. You also get the option to save whatever camera filter you like. The saved images, at this stage, include 
+          everything on the canvas but I'm working to find a way to save only the face without the DOM elements or text instructions.</li>
+     <li>3. The goal is to keep creating new filters built from tinier elements. As you can see, a fourth image featuring the wave
+          from The Great Wave off Kanagawa by Hokusai. </li>
+          
+          </p>
+    
+    
+    
+   
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        <li>The sketch attempts to address the F.R.I.E.S model in the following ways:
+      <Li>a. Freely-given: The camera does not start until a user allows them permission to do so using the "Yes" or "No buttons".</Li>
+      <li> b. Reversible: The "Leave" button is designed to get someone of the scene that actively utilizes the camera. At this point, a challenge
+      is to actually stop the webcam everyone someone leaves instead of just switching scenes.</li>
+     <li> c. Informed: The copy included in this iteration of experimental camera tries to keep the user as informed as possible about what
+       to expect of their experience.</li>
+   <li>   d. Enthusiastic: No additional inputs are demanded of the user if they want to access the face filters. </li>
+    <li>  e. Specific: Because the functionality to stop createCapture once the user exits the corresponding scene 
+    involves out-of-syllabus functions like tracks and callbacks, it still isn't perfect in being specific. The user exits the scene but
+    the camera continues to show live feed--the solutions to which are presently being investigated.</li>
+    </p>
+    
+
+    <div>
+        
+      
+       <!-- 5. credits -->
+      <h1>
+        Credits
+      </h1>
+      
+      <p>
+        <li>Special shoutout to fellow DT student Hasan Khalid for helping me figure out how the createCapture can be
+        turned on only when a button is pressed. </li>
+        <li>The project mostly utilized lessons from Xin Xin and Katherine Moriwaki's tutorials.</li>  
+        <li>The base code was learned from <a href = "https://codeburst.io/instagram-filters-with-javascript-p5-js-83f28c9f7fda"><b>Instagram Filters with p5.js, Kelly Lougheed </b></a></li>
+        <li>The video and pixels tutorial added addtional understanding of the pixel array <a href = "https://www.youtube.com/watch?v=m1G6WBvrOBE&list=PLRqwX-V7Uu6aKKsDHZdDvN6oCJ2hRY_Ig&index=5"> 
+          <b>as provided by The Coding Traing</b></a></li>     
+      </p>
+      
+    </div>
+  </body>
+</html>
