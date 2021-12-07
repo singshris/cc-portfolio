@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shristi| Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Shristi</h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a></li>
+        <li>Project <a href="p2.html">#2</a></li>
+        <li>Project <a href="p3.html">#3</a></li>
+        <li>Project <a href="p4.html">#4</a></li>
+        <li>Project <a href="p5.html">#5</a></li>
+        <li>Project <a href="p6.html">#6</a></li>
+        <li>Project <a href="p7.html">#7</a></li>
+        <li>Project <a href="p8.html">#8</a></li>
+        <li>Project <a href="p9.html">#9</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Experimental Clock
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        
+       <iframe
+        allow="camera"
+          width="600px"
+          height="600px"
+        src="https://preview.p5js.org/shristinos/embed/QTUkOghTk"></iframe>
+        <p>
+          <a href="https://editor.p5js.org/shristinos/sketches/QTUkOghTk">Link to code</a></p>
+        </p>
+      </div>
+
+  
+    
+    
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        The assignment asked us to reflect on the conditions under which “time” moves <b>forward</b> for our clock. 
+        I chose to exist in the liminal space where it simply loops. Because when you've grown up a TV addict, all
+        you do is live the same day over and over. Same patterns, different shows. 'TV TIME' is how I perceive time 
+        to move when I am nose-deep in my one of my characteristic binge-watching sessions. A single minute has been 
+        "mapped" to the progressions of watching a series with each episode marking a single unit of time (conceptually,
+        12 standarized seconds = 1 TV Time unit). Unfortunately, I struggled with the reset button since you can't reset 
+        time itself but give it a [human] minute and watch the clock give you a glimpse into A Day in My Life.  
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+
+      <p>
+        1. The 3 shortlisted ways of tracking time included a) train time b) TV time and c) hair-growth time
+        
+        <img src = "https://cdn.glitch.com/d4bc6f13-b09b-4f55-89bf-4831c101d69e%2FUntitled_Artwork%203.jpg?v=1632643757824"/>
+        </p>
+        <p>
+          <br>
+    <div>
+      
+      
+      
+      
+ <p> 2. The basic pseudocode for each is as follows:
+          a) Train Time: The passage of each train becomes one unit of time. 
+          <p>
+            
+            if (train leaves the station);</p>
+       <p>   {unit of time = unit of time + 1};
+            </p>
+        <br>  <p>
+      
+    This concept struggled to match the chaotic energy I'd envisioned for my personal clock.
+    There was a need to include multiple playful variables. </p>
+    </br>
+         <p> b) TV Time: This was eventually chosen because it is a nod to my Reading Response for Week 3--
+          <i>"In contrast to what may be categorized as more of a universal experience, an instance of 
+          alternative time for me specifically is “TV time”."</i>
+      </br>
+if (s == 30 seconds)
+{episode plays}
+else if (s>30 seconds and less than 40 seconds)
+{I'm taking a break}
+
+  The Groundhog Day-esque treatment was of particular interest to me since it happens to be my favorite genre of cinema. </p>
+
+<br> <p>
+  
+  c) Hair Growth Time: Time would move forward at the rate at which my body hair would grow. I wanted to mark how my
+hair growth determines my clothing choices. 
+
+if (no hair)
+{I wear tank tops and shorts}
+if (some growth)
+{I wear t-shirts and skirts}
+if (full growth)
+{I wear full-sleeves and pants/trousers}
+
+The concept hasn't been rejected altogether; only tabled for another day. </p> 
+  
+        <p>3. Emojis seemed a fitting choice to concretize the heavy internet presence that actually dictated TV time. 
+          In the era before streaming platforms, this method of tracking time would perhaps have not existed.
+        </p><br>
+    
+<h1>
+        Iteration
+      </h1>
+      
+      <p>
+      A revised version of this code included the minute() and hour() inherent p5.js functions, that added some more
+        periodic flair to clock:
+        <li>1. Modulo with minute() was used to simulate the "migraines" I often contracted when my eyes were glued to the
+        TV for lengthy amounts of time. For a couple seconds in every alternate minute, there is a flash of jittery green
+        meant to visualize a migraine.</li>
+        <li>2. The hour() adds a creeping in sense of dread that maps duration to darkness. The more the hours spent in 
+        a binge-watching hole, the darker is the background--a symbol of a darker life.</li>
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+      
+      <p>
+      As is the case with my newfound coding abilities, there were many things I wanted to do but didn't know how to. 
+      Adding a reset button, was one of many temporary shortfalls of my process. Map() remains a mystery that I hope
+      to unravel after repeated viewings of the tutorial. However, this is the most pleased I have been with any of my 
+      sketches so far. 3, to be precise. I mostly achieved everything I set out to but continue to refine my written
+      code, which isn't as coherent as I would like it to be. 
+      
+      The beauty of the experimental clock was in its applied thinking. My mind was reaching for ideas it had never 
+      been asked to reach for before and coming up with one's own perception of time is hardly a tedious task. 
+      Observing everyone else's drastically varied perceptions was just as inspiring in our endevour to comprehend time.  
+        
+      
+       <!-- 5. credits -->
+      <h1>
+        Credits
+      </h1>
+      
+      <p>
+        <li>The project borrowed its colour palette from <a href="https://coolors.co/">Coolors</a> by Fabrizio Bianchi.</li>
+        <li>The project mostly utilized lessons from Xin Xin and Katherine Moriwaki's tutorials.</li>
+        <li>I learned how to upload images from <a href="https://www.youtube.com/watch?v=rO6M5hj0V-o">this tutorial</a> by Dan Shiffman.</li>
+        <li>Emojis were sourced from <a href="https://emojiisland.com/pages/download-new-emoji-icons-in-png-ios-10"> here </a></li>     
+      </p>
+      
+    </div>
+  </body>
+</html>
