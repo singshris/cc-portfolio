@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title><a href = "index.html">Shristi | Critical Computation Portfolio</a></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+  <h1><a href = "index.html">Shristi</a></h1>
+      <ul>
+        <li>#1 <a href="p1.html">Lost Object</a></li>
+        <li>#2 <a href="p2.html">Random Face Generator</a></li>
+        <li>#3 <a href="p3.html">Experimental Clock</a></li>
+        <li>#4 <a href="p4.html">Exquisite Corpse</a></li>
+        <li>#5 <a href="p5.html">Optical Illusion</a></li>
+        <li>#6 <a href="p6.html">Data Portrait</a></li>
+        <li>#7 <a href="p7.html">Autobiographical Game</a></li>
+        <li>#8 <a href="p8.html">Experimental Camera</a></li>
+        <li>#9 <a href="p9.html">Consentful Interface</a></li>
+        <li>#10 <a href="p10-1.html">Sousveillance Tool</a></li>
+      </ul>
+    </div>
+
+      <!-- main content -->
+    <div class="content">
+      <h1>
+        Random News Generator
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+    <iframe   allow="camera"
+          width="700px"
+          height="650px"
+            src="https://editor.p5js.org/shristinos/full/JTR9hLCIp"></iframe>
+        
+        <p>
+  
+  There is a limit to how many times I can request data from this api per day but the code works perfectly fine when allowed to.<a href="https://editor.p5js.org/shristinos/sketches/vyNSj7yxg">Click here to see.</a> 
+  </p>
+       
+
+    </div>
+   <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+     An ode to my time as journalist, the random news generator pulls up news about and from countries without filtering it through a particular portal regardless of its nature, left, right or center. 
+    For most of us, media is a formest connection to the rest of the world, and consequentlyt, has this unyielding ability to warp out belief systems about people, places, and things. 
+   Evidently, this has had drastic effects through history. Catering biased information to selective groups has already been proven to be a tool of mass destruction. 
+        I used this opportunity to create a simple interface that brings the user the 9 most recent news headlines from a range of news sources. While the lack of categorizing 
+        it a particular beat makes it seem random, it has quite the opposite effect. Perspectives are pieced together onto one canvas, regardless of their source and the reader
+        immediately knows where it's coming from. This take on 'News at a glance' is my way of trying to chip away at the echo chambers we're subconsciously building for ourselves on
+        account of a manicured digital presence. 
+        The constraint of the tool is set by the user when they enter the country they want to read news about. 
+
+       
+        <br>
+      
+          
+    
+      <h1>
+        Process
+      </h1>
+<p> I accessed the <a href = "https://apilist.fun/api/unofficial-google-news-api"/>google news api</a>
+      
+       <li>1. I'd always intended to work with news APIs for this assignment, given the theme of Amy Suo Wu's text.</li>
+          <li> 2. Trying to tackle something as new and complex as Query and APIs during finals while also making it relate to the equally new and complex concept of sousveillance was 
+            the most challenging part of the process. Multiple news APIs refused to load. Eventually, News API worked best. However, allowing only a 100 requests per day, the source will perhaps 
+      have to be replaced or I would have to get a premium subscription.</li>
+     <li>3. The JSON dataset created (zoom in): 
+      <img src ="https://cdn.glitch.me/d4bc6f13-b09b-4f55-89bf-4831c101d69e/2.png?v=1639797111719"/></li>
+          <li>4. The parsed data looked something like this:
+             <img src ="https://cdn.glitch.me/d4bc6f13-b09b-4f55-89bf-4831c101d69e/1.png?v=1639797122494"/></li>
+    <br><br><br><br>   <br><br><br><br>  <br><br><br><br>   <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br>
+    <li>5. Of the available information, I chose to display the main headline, date and time of release, and news source. Even thought the tool is meant
+    to automatically pull up the ten latest news headlines, letting the viewer know exactly when still felt important enough to include. </li>
+          </p>
+    
+    
+    
+   
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        <li>The sketch attempts to tackle the assignment's sousveillance prompt in the following ways:
+      <Li>a. People anywhere in the world, can access news about anywhere else in the world, which means that they are not limited by what news sources are bringing to them.</Li>
+      <li> b. While I do acknowledge the irony of using big tech-built APIs to solve problems created by big tech itself, the fact that the the user is removed from its immediate influence
+        in using an locally created tool brings us step closer to at least diversify the ways in which we're being delivered important world news.</li>
+     <li> c. When building the code for this, I only played the part of a "curator", not manipulating the data in any way but just choosing to represent it in the best way I could 
+        as permitted by my skillset. The interface is thus kept simple and non-distracting with all the power given to the text. </li>
+    </p>
+  <p>
+    Basic sampling of the tool (9 headlines are loaded about or from the country that is entered into the input box)
+    <br><br> <img src = "https://cdn.glitch.me/d4bc6f13-b09b-4f55-89bf-4831c101d69e/Screenshot%202021-12-17%20at%2010.59.23%20PM.png?v=1639799998605"/>
+  </p>
+   
+
+    <div>
+        
+      <br><br><br><br>   <br><br><br><br>  <br><br><br><br>   <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br>
+       <!-- 5. credits -->
+      <h1>
+        Credits
+      </h1>
+      
+      <p>
+        <li>Once again, I must thank <a href = "https://www.youtube.com/watch?v=4UoUqnjUC2c"><b>Dan Shiffman</b></a>for carrying me through the semester, and helping me make sense of JSON, API, and so much more. </li> 
+        <li>The fonts were sourced from <a href = "https://fonts.google.com/7fda"><b>Instagram Filters with p5.js, Kelly Lougheed </b></a></li>
+      </p>
+      
+    </div>
+  </body>
+</html>

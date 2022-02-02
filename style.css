@@ -5,10 +5,11 @@ body {
   margin: 2em;
   width: 100%;
   height: 100%;
+  background-color: #FCECC9
 }
 
 h1 {
-  color: #373fff;
+  color: #8270AF;
   font-size: 18pt;
 }
 .special-h2{
